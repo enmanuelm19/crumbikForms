@@ -1,0 +1,182 @@
+$navbar-font-color: #646464;
+$navbar-height: 85px;
+/*$primary-color: color("materialize-red", "lighten-2") !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+*/
+$secondary-color: #6f3ce1 !default;
+/*$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
+*/ 
+
+@import "materialize";
+
+@media only screen and (min-width: 601px){
+
+  	nav a.brand-logo{
+  		padding-top: 4px;
+  		padding-left: 40px;
+  		top: -2px;
+  		left: 0;
+  	}
+}
+
+nav span#logo-text, nav ul a{
+	color: #646464;
+}
+nav span#logo-text{
+	margin-left: 10px;
+ 	vertical-align: top;
+}
+
+nav .contenedor{
+	display: flex;
+  	justify-content: center;
+}
+
+nav ul#nav-sesion{
+	position: absolute;
+  	right: 0px;
+}
+nav ul#nav-sesion li{
+	position: relative;
+}
+nav ul#nav-sesion li:hover{
+	background: transparent;
+}
+nav ul#nav-sesion li:first-child:after{
+	content: "|";
+	display: inline-block;
+	color: #646464;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+
+nav ul#nav-sesion li a{
+	display: inline;
+}
+
+.botonLogin{
+
+    margin-left:50%;
+}
+
+.fuente{
+        weight:600px;
+        font-style: italic;
+        font-weight: bold;
+}
+
+
+
+.fuenteslogan{
+    font-size:800%;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing: 10px;
+}
+
+.fuenteslogan2{
+    font-size:400%;
+    font-weight: bold;
+}
+.fila2 {
+    margin-top: 16%;
+}
+
+.fila3 {
+    margin-top: 13%;
+}
+
+.tamanno500
+{
+    height: 500px;
+}
+
+.tamanno600 {
+    height: 600px;
+}
+
+.fondoazul {
+    background-image: url("<%= asset_path 'fondoazul.jpg'%>");
+    background-size: 100%;
+}
+
+.fondocyan {
+    background-color: skyblue;
+    background-size: 100%;
+}
+
+.iconnegro {
+    color:black;
+}
+
+.tamanno200 {
+    height: 200px;
+}
+
+.turquesa {
+    color: lightseagreen;
+}
+
+.tamanno100 {
+    height: 100px;
+}
+.tamanno650 {
+    height: 650px;
+}
+
+.tamanno400 {
+    height: 400px;
+}
+.tamanno800 {
+    height: 800px;
+}
+
+.imagenplan{
+    width: 190px;
+    height: 150px;
+    position: relative;
+    top: 10px;
+
+}
+
+.a {
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+.imgUbicacion {
+    height: 100px;
+    position: inherit;
+    left: 90px;
+}
+
+.h5Ubicacion {
+    position: inherit;
+    left: 210px;
+    top: 55px;
+
+}
+
+div#ubicacion {
+    right: 10px;
+    margin: auto;
+    margin-top: 50px;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+}
+
+.fuenteUbicacion {
+    position: absolute;
+    left:100px;
+    color: darkslategray;
+    font-size: 14px
+}
+

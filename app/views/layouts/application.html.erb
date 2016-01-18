@@ -1,0 +1,28 @@
+    <!DOCTYPE html>
+<html>
+	<head>
+
+	  <title>Crumbik   </title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= yield :css_personalizado %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<%= render "partials/header" %>
+		<% if notice %>
+  <p class="card-panel teal lighten-2"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="card-panel teal lighten-2"><%= alert %></p>
+<% end %>
+		<%= yield %>
+		<%= render "partials/footer" %>
+		
+		<%= yield :javascript_personalizado %>
+	</body>
+
+</html>
