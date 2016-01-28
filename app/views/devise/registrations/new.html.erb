@@ -10,45 +10,52 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
 
-  <div class="field">
-    <%= f.label :contrasenna   %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :confirmacion_de_la_contrasenna %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+          <div class="field">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true %>
+          </div>
 
-      <div class="field">
-        <%= f.label :nombre %><br />
-        <%= f.email_field :name, autofocus: true %>
+          <div class="field">
+            <%= f.label :contraseña%>
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "off" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :confirmacion_de_la_contraseña %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "off" %>
+          </div>
+
+            <div class="field">
+                <%= f.label :nombre %><br />
+                <%= f.text_field :name%>
+              </div>
+
+              <div class="field">
+                <br>
+                <%= f.label :apellido %><br />
+                <%= f.text_field :lastname%>
+              </div>
+
+              <div class="field">
+                <%= f.label :telefono%><br />
+                <%= f.text_field :cellphone_number %>
+              </div>
+
+              <div class="field">
+                <%= f.label :Fecha_de_nacimiento     %><br />
+                    <%= f.text_field :birthdate, type: "date", class: "datepicker "%>
+              </div>
       </div>
 
-      <div class="field">
-        <%= f.label :telefono%><br />
-        <%= f.email_field :cellphone_number, autofocus: true %>
+      <div class="actions">
+      <%= f.submit "Sign up" %>
       </div>
-
-      <div class="field">
-        <%= f.label :edad %><br />
-            <%= f.text_field  :age%>
-      </div>
-
-
-  <div>
-            <a><%= f.submit "Registrate", class: 'waves-light waves-effect btn' %> </a>
-  </div>
 <% end %>
-
 
 </div>
 </body>
