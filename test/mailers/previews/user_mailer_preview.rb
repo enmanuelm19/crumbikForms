@@ -1,0 +1,10 @@
+# Preview all emails at http://localhost:3000/rails/mailers/user_mailer
+class UserMailerPreview < ActionMailer::Preview
+
+  # Preview this email at http://localhost:3000/rails/mailers/user_mailer/new_client
+  def new_client
+  	user = User.first
+    UserMailer.new_client(user)
+  end
+
+end

@@ -7943,3 +7943,1926 @@ Processing by PaginasController#index as HTML
   Rendered partials/_header.html.erb (2.8ms)
   Rendered partials/_footer.html.erb (0.9ms)
 Completed 200 OK in 113ms (Views: 112.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-30 13:41:21 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (305.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/noreysi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/noreysi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/noreysi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.2ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.3ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (67.0ms)
+  [1m[36m (376.7ms)[0m  [1mDROP TABLE `users` CASCADE[0m
+  [1m[35m (185.0ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `provider` varchar(255), `uid` varchar(255), `name` varchar(255), `lastname` varchar(255), `birthdate` date, `sex` varchar(255), `phone_number` varchar(255)) ENGINE=InnoDB
+  [1m[36m (203.7ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` USING btree ON `users` (`email`) [0m
+  [1m[35m (254.8ms)[0m  CREATE  INDEX `index_users_on_provider` USING btree ON `users` (`provider`) 
+  [1m[36m (188.6ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token` USING btree ON `users` (`reset_password_token`) [0m
+  [1m[35m (188.2ms)[0m  CREATE  INDEX `index_users_on_uid` USING btree ON `users` (`uid`) 
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (50.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160118194300')
+  [1m[36m (55.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20151026184125')[0m
+  [1m[35m (55.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160118193938')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-30 13:42:02 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PaginasController#index as HTML
+  Rendered paginas/index.html.erb within layouts/application (22187.3ms)
+  Rendered partials/_header.html.erb (20.3ms)
+  Rendered partials/_footer.html.erb (2.5ms)
+Completed 200 OK in 23097ms (Views: 22910.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owl.theme.self-d43a451decfbae7699bde01271ce9379402425b3b7e99d53ecefbaa6e086a2e5.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:29 -0430
+
+
+Started GET "/assets/materialize_conf.self-2471e58471544239d3ec99a4e60fda4d2f38e8c067981530d3d9cb47854d455b.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/general.self-600c85b85d9de874c54e541ec37596eba8bc87c34d4aaf64dba86a47a1aaae40.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/owl.carousel.self-8bdce040286fb9b851d53a7af378ae135e1ef93e85f6d1082630d6729cf59337.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/footer.self-b4868899910f3742937796b69ef0dc6304ed8986b5477651e44c551fe143df3c.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/frontend.self-cb159f54acba162ad550e790139820040302a26b44fbf16066df64d5124923c2.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/jquery-ui/theme.self-df1da30301997b52795cb0213bccd335f2897b65f84d1d7d7c63c04f048d902f.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/owl.transitions.self-fff066b05183538ba375ba3d7ae9c4c36c39fdde07d62583aff0d564447b256c.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-23329dbe1961b938278306c019037fe36ff6ccb28193f1038e52ccbf52858163.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-bf92a2196df590f06fad4ab5bb7ed4db1874a9bef0c9af85ea0490d2108b9966.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/application.self-622ba76a83b79648ea1e290ea2423971a32b738b0101ce6309d704883954621c.css?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:31 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/owl.carousel.min.self-ee217c0bc23f4d8dd78f1859aa30cfc915864228ad3d2077f9ad2befc8c4626e.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/users.self-c6bcd7697df21634f137527e789adb76293f1c13d34abe10ca4f002d525c14fb.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/application.self-4fea73ccac37b1856cd7b42ea4c498374bfb6d00e9f50761a76518bb3dda916b.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/logo-75217d832579eaa88aca427b304af5add12b96d3c88b3b9046de61743d18b518.png" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/logoslogan-cb779e2da65d28f34b170d674d6d50abc6078046bd62fc8cdb077329d66a5920.png" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/crm-b4c98d7c35886ba201ab4e18ca20fb48b4f79ed6fe7e53c02d9a4099017fad41.jpg" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/crm2-25a154056568e83b07172a33e51a9c630241d2a99f9c85cad9dfc227ad698cab.jpg" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/satisfecho-0d26194eef20a5ac6f5c24bf1dc2611acdec3735427b7486aec20166489799a2.jpg" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/crmlupa-5c16cd3e562600cbb519aefbf526beff3c443e1359a0cb82fc2f54af4354a2c4.jpg" for 127.0.0.1 at 2016-01-30 13:42:32 -0430
+
+
+Started GET "/assets/email-9dff874eb167b9151209b7d2e21380f3089108f34d9b1ddab23095f195e95576.jpg" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/parallax2-2fc13cae63b0a97ef2e4e7075aaf7bc90dc32d3803f6fdc7502e10531b875271.png" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/Bronce-4afe5c64b9357543101d4ac6f23cd619abdaf83087c761170abb925cd179c0c1.png" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/Plata-81bdf8911f6943685532f06892b1d5bc980ec6acb41fdb2e411c5cfd957b04c1.png" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/Oro-43e4a2d593a39ef523672e392b2ea266bd109f4eff405c4e460886fe4f0030f5.png" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/demanda-bf15360b268d0ef0e0a8a4673e499c48ed710d5e128413ee89e94f8d853c8a9b.jpg" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/ubicacion-dee3accdb0db40df95455be8ee10359f4bad1edd06834f559501a9f3db2dd8dc.png" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/digital-cd062d2f4881bfefb858ce1234d64fa0d9f65393bbb1833f007a1834c98baee5.jpg" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/configuracion-ba6b725949ff2f284362a9ec0da70babfa98e5499255b1ebe63d6c94708a8557.jpg" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/crumbikfoot-a8f751c5b7228e0f95586dd0fdb25ca7e8e65f2f59e522aaa9446afb607dfb7c.png" for 127.0.0.1 at 2016-01-30 13:42:33 -0430
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for 127.0.0.1 at 2016-01-30 13:42:35 -0430
+
+
+Started GET "/assets/roboto/Roboto-Bold-8b84b2abc336ee61f48a28a697b6ace2333ea5f1868aa15d5aeb2c7beac6d716.woff2" for 127.0.0.1 at 2016-01-30 13:42:35 -0430
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2016-01-30 13:42:36 -0430
+
+
+Started GET "/assets/fondoazul-0e1f36300ae483f848f917892bf1077243b4065559b95f08504df2bf978c9f4a.jpg" for 127.0.0.1 at 2016-01-30 13:42:36 -0430
+
+
+Started GET "/assets/digital-cd062d2f4881bfefb858ce1234d64fa0d9f65393bbb1833f007a1834c98baee5.jpg" for 127.0.0.1 at 2016-01-30 13:42:37 -0430
+
+
+Started GET "/assets/configuracion-ba6b725949ff2f284362a9ec0da70babfa98e5499255b1ebe63d6c94708a8557.jpg" for 127.0.0.1 at 2016-01-30 13:42:37 -0430
+
+
+Started GET "/assets/backgroundfooter-bb9231916d7d6cbaeea32bbcc04c5721fc22f05afcb4a6000d47a2d785c377ee.png" for 127.0.0.1 at 2016-01-30 13:42:37 -0430
+
+
+Started GET "/assets/roboto/Roboto-Thin-fbcf22e622baa9226f9f2dcd2ce4975c9babc01a52eaf9397557a97cdebd7e40.woff2" for 127.0.0.1 at 2016-01-30 13:42:37 -0430
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-01-30 13:44:58 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (85.3ms)
+  Rendered partials/_header.html.erb (3.3ms)
+  Rendered partials/_footer.html.erb (1.9ms)
+Completed 200 OK in 1214ms (Views: 1157.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (15.1ms)
+  Rendered partials/_header.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 330ms (Views: 326.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/footer.self-b4868899910f3742937796b69ef0dc6304ed8986b5477651e44c551fe143df3c.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize_conf.self-2471e58471544239d3ec99a4e60fda4d2f38e8c067981530d3d9cb47854d455b.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/general.self-600c85b85d9de874c54e541ec37596eba8bc87c34d4aaf64dba86a47a1aaae40.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/owl.theme.self-d43a451decfbae7699bde01271ce9379402425b3b7e99d53ecefbaa6e086a2e5.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/owl.carousel.self-8bdce040286fb9b851d53a7af378ae135e1ef93e85f6d1082630d6729cf59337.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/frontend.self-cb159f54acba162ad550e790139820040302a26b44fbf16066df64d5124923c2.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/owl.transitions.self-fff066b05183538ba375ba3d7ae9c4c36c39fdde07d62583aff0d564447b256c.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/jquery-ui/theme.self-df1da30301997b52795cb0213bccd335f2897b65f84d1d7d7c63c04f048d902f.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-23329dbe1961b938278306c019037fe36ff6ccb28193f1038e52ccbf52858163.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/application.self-622ba76a83b79648ea1e290ea2423971a32b738b0101ce6309d704883954621c.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-bf92a2196df590f06fad4ab5bb7ed4db1874a9bef0c9af85ea0490d2108b9966.css?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for 127.0.0.1 at 2016-01-30 13:45:59 -0430
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/owl.carousel.min.self-ee217c0bc23f4d8dd78f1859aa30cfc915864228ad3d2077f9ad2befc8c4626e.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/application.self-4fea73ccac37b1856cd7b42ea4c498374bfb6d00e9f50761a76518bb3dda916b.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/users.self-c6bcd7697df21634f137527e789adb76293f1c13d34abe10ca4f002d525c14fb.js?body=1" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/logo-75217d832579eaa88aca427b304af5add12b96d3c88b3b9046de61743d18b518.png" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/crumbikfoot-a8f751c5b7228e0f95586dd0fdb25ca7e8e65f2f59e522aaa9446afb607dfb7c.png" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/backgroundfooter-bb9231916d7d6cbaeea32bbcc04c5721fc22f05afcb4a6000d47a2d785c377ee.png" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/roboto/Roboto-Thin-fbcf22e622baa9226f9f2dcd2ce4975c9babc01a52eaf9397557a97cdebd7e40.woff2" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/roboto/Roboto-Bold-8b84b2abc336ee61f48a28a697b6ace2333ea5f1868aa15d5aeb2c7beac6d716.woff2" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started GET "/assets/roboto/Roboto-Medium-1cd5c4b37938d932110ec043ce1cc766d18cacf7a4e7cffa6a539855d5bdc08d.woff2" for 127.0.0.1 at 2016-01-30 13:46:00 -0430
+
+
+Started POST "/users" for 127.0.0.1 at 2016-01-30 13:46:18 -0430
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TLfmnAoYeze0oOPRd+FIZbqIi3li6pfWIkGthtb4Nf3bu4GJLUG0Gr4vNsiZBmTtwlvBha6BRl/h06dCDylhFw==", "user"=>{"email"=>"nore@crumbik.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"nore", "lastname"=>"", "cellphone_number"=>"", "birthdate"=>""}, "commit"=>"Sign up"}
+Unpermitted parameters: lastname, cellphone_number, birthdate
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (16.7ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'nore@crumbik.com' LIMIT 1[0m
+  [1m[35mSQL (25.7ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('nore@crumbik.com', '$2a$10$gdnyWl3ydRvapNTzlr1KUu3O45E.ZKaU6F8pC4gHKx.r6iBRM.hU2', '2016-01-30 18:16:19.304138', '2016-01-30 18:16:19.304138')
+  [1m[36m (63.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (19.0ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2016-01-30 18:16:19.396478', `current_sign_in_at` = '2016-01-30 18:16:19.396478', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2016-01-30 18:16:19.398188' WHERE `users`.`id` = 1[0m
+  [1m[35m (35.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 552ms (ActiveRecord: 160.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-30 13:46:19 -0430
+Processing by PaginasController#index as HTML
+  Rendered paginas/index.html.erb within layouts/application (21.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered partials/_header.html.erb (5.2ms)
+  Rendered partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 237ms (Views: 235.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-01-30 13:46:23 -0430
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kz70PzdvJVbr9CR0UCLA44bcSJXjBBE1CaDZWmPb7FMEMpMqEDbqe+F78W2+xexr/g8CaS9vwLzKMtOeugq4uQ=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-30 13:46:23 -0430
+Processing by PaginasController#index as HTML
+  Rendered paginas/index.html.erb within layouts/application (17.5ms)
+  Rendered partials/_header.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 233ms (Views: 231.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/mailers/user_mailer" for 127.0.0.1 at 2016-01-30 14:16:04 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (33.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer"}
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/railties-4.2.0/lib/rails/templates/rails/mailers/mailer.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 115ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/mailers/user_mailer/new_client" for 127.0.0.1 at 2016-01-30 14:16:41 -0430
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer/new_client"}
+  [1m[35mUser Load (6.2ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (1.5ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#new_client: processed outbound mail in 403.4ms
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/railties-4.2.0/lib/rails/templates/rails/mailers/email.html.erb (14.9ms)
+Completed 200 OK in 611ms (Views: 34.7ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/rails/mailers/user_mailer/new_client?part=text%2Fhtml" for 127.0.0.1 at 2016-01-30 14:16:41 -0430
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"user_mailer/new_client"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (0.1ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.1ms)
+
+UserMailer#new_client: processed outbound mail in 18.9ms
+  Rendered text template (0.1ms)
+Completed 200 OK in 46ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/mailers/user_mailer/new_client" for 127.0.0.1 at 2016-01-30 14:17:10 -0430
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer/new_client"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (1.0ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (1.0ms)
+
+UserMailer#new_client: processed outbound mail in 20.4ms
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/railties-4.2.0/lib/rails/templates/rails/mailers/email.html.erb (11.1ms)
+Completed 200 OK in 39ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/mailers/user_mailer/new_client?part=text%2Fhtml" for 127.0.0.1 at 2016-01-30 14:17:10 -0430
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"user_mailer/new_client"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (0.2ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.0ms)
+
+UserMailer#new_client: processed outbound mail in 21.3ms
+  Rendered text template (0.1ms)
+Completed 200 OK in 27ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/mailers/user_mailer/new_client" for 127.0.0.1 at 2016-01-30 14:21:09 -0430
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"user_mailer/new_client"}
+  [1m[35mUser Load (43.0ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (0.1ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.1ms)
+
+UserMailer#new_client: processed outbound mail in 87.0ms
+  Rendered /home/noreysi/.rvm/gems/ruby-2.2.1/gems/railties-4.2.0/lib/rails/templates/rails/mailers/email.html.erb (8.0ms)
+Completed 200 OK in 218ms (Views: 36.8ms | ActiveRecord: 43.0ms)
+
+
+Started GET "/rails/mailers/user_mailer/new_client?part=text%2Fhtml" for 127.0.0.1 at 2016-01-30 14:21:10 -0430
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"user_mailer/new_client"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (0.1ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.1ms)
+
+UserMailer#new_client: processed outbound mail in 16.7ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/mailers/user_mailer/new_client?part=text%2Fplain" for 127.0.0.1 at 2016-01-30 14:21:16 -0430
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/plain", "path"=>"user_mailer/new_client"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (0.1ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.0ms)
+
+UserMailer#new_client: processed outbound mail in 18.9ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 27ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/mailers/user_mailer/new_client?part=text%2Fhtml" for 127.0.0.1 at 2016-01-30 14:21:19 -0430
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"user_mailer/new_client"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (0.1ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.1ms)
+
+UserMailer#new_client: processed outbound mail in 24.7ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 31ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1[0m
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-01-30 14:24:35 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (118.5ms)
+  Rendered partials/_header.html.erb (3.5ms)
+  Rendered partials/_footer.html.erb (1.8ms)
+Completed 200 OK in 1877ms (Views: 1855.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/frontend.self-cb159f54acba162ad550e790139820040302a26b44fbf16066df64d5124923c2.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/general.self-600c85b85d9de874c54e541ec37596eba8bc87c34d4aaf64dba86a47a1aaae40.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize_conf.self-2471e58471544239d3ec99a4e60fda4d2f38e8c067981530d3d9cb47854d455b.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/owl.carousel.self-8bdce040286fb9b851d53a7af378ae135e1ef93e85f6d1082630d6729cf59337.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/owl.theme.self-d43a451decfbae7699bde01271ce9379402425b3b7e99d53ecefbaa6e086a2e5.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/footer.self-b4868899910f3742937796b69ef0dc6304ed8986b5477651e44c551fe143df3c.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/owl.transitions.self-fff066b05183538ba375ba3d7ae9c4c36c39fdde07d62583aff0d564447b256c.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/jquery-ui/theme.self-df1da30301997b52795cb0213bccd335f2897b65f84d1d7d7c63c04f048d902f.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-23329dbe1961b938278306c019037fe36ff6ccb28193f1038e52ccbf52858163.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-bf92a2196df590f06fad4ab5bb7ed4db1874a9bef0c9af85ea0490d2108b9966.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/application.self-622ba76a83b79648ea1e290ea2423971a32b738b0101ce6309d704883954621c.css?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:37 -0430
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/owl.carousel.min.self-ee217c0bc23f4d8dd78f1859aa30cfc915864228ad3d2077f9ad2befc8c4626e.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/users.self-c6bcd7697df21634f137527e789adb76293f1c13d34abe10ca4f002d525c14fb.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/application.self-4fea73ccac37b1856cd7b42ea4c498374bfb6d00e9f50761a76518bb3dda916b.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/logo-75217d832579eaa88aca427b304af5add12b96d3c88b3b9046de61743d18b518.png" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/crumbikfoot-a8f751c5b7228e0f95586dd0fdb25ca7e8e65f2f59e522aaa9446afb607dfb7c.png" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/roboto/Roboto-Bold-8b84b2abc336ee61f48a28a697b6ace2333ea5f1868aa15d5aeb2c7beac6d716.woff2" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/roboto/Roboto-Thin-fbcf22e622baa9226f9f2dcd2ce4975c9babc01a52eaf9397557a97cdebd7e40.woff2" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/backgroundfooter-bb9231916d7d6cbaeea32bbcc04c5721fc22f05afcb4a6000d47a2d785c377ee.png" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started GET "/assets/roboto/Roboto-Medium-1cd5c4b37938d932110ec043ce1cc766d18cacf7a4e7cffa6a539855d5bdc08d.woff2" for 127.0.0.1 at 2016-01-30 14:24:38 -0430
+
+
+Started POST "/users" for 127.0.0.1 at 2016-01-30 14:24:55 -0430
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pYD5NH27flR17hpFM0rZcocloTU3465ieHdNXGSRhsC2pJnjstB1Mepr0dbYF/8VXuocFb4Ky7luW9N3/QiWAA==", "user"=>{"email"=>"noreysiescalona@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"", "lastname"=>"", "cellphone_number"=>"", "birthdate"=>""}, "commit"=>"Sign up"}
+Unpermitted parameters: lastname, cellphone_number, birthdate
+  [1m[35m (68.6ms)[0m  BEGIN
+  [1m[36mUser Exists (116.5ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'noreysiescalona@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (64.3ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('noreysiescalona@gmail.com', '$2a$10$v4Ryee0VvrGwTNDus57douBikIxKVb8qBuC/Q5tYdaqAI4VvRQscW', '2016-01-30 18:54:56.009466', '2016-01-30 18:54:56.009466')
+  [1m[36m (101.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (29.3ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2016-01-30 18:54:56.179051', `current_sign_in_at` = '2016-01-30 18:54:56.179051', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2016-01-30 18:54:56.180972' WHERE `users`.`id` = 2[0m
+  [1m[35m (96.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 955ms (ActiveRecord: 477.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-30 14:24:56 -0430
+Processing by PaginasController#index as HTML
+  Rendered paginas/index.html.erb within layouts/application (23.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered partials/_header.html.erb (3.4ms)
+  Rendered partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 291ms (Views: 289.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-01-30 14:24:59 -0430
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"B6W401AfGaicixRnB88Umi5nPEpMXiZTRXUt+IHPOSwUgdgEn3QSzQMO3/TskjL996iBasW3Q4hTWbPTGFYp7A=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 49ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-30 14:24:59 -0430
+Processing by PaginasController#index as HTML
+  Rendered paginas/index.html.erb within layouts/application (19.7ms)
+  Rendered partials/_header.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 232ms (Views: 231.7ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'noreysiescalona@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'noreysiescalona@gmail.com' LIMIT 1[0m
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (2.0ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.4ms)
+
+UserMailer#new_client: processed outbound mail in 486.1ms
+
+Sent mail to noreysiescalona@gmail.com (1534.2ms)
+Date: Sat, 30 Jan 2016 14:28:43 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad07e3d3256_481a955998817af@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad07d9cb0d0_481a955998816b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9--
+
+
+Sent mail to noreysiescalona@gmail.com (1077.4ms)
+Date: Sat, 30 Jan 2016 14:28:43 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad07e3d3256_481a955998817af@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad07d9cb0d0_481a955998816b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9--
+
+
+Sent mail to noreysiescalona@gmail.com (1418.7ms)
+Date: Sat, 30 Jan 2016 14:28:43 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad07e3d3256_481a955998817af@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad07d9cb0d0_481a955998816b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9--
+
+
+Sent mail to noreysiescalona@gmail.com (4927.4ms)
+Date: Sat, 30 Jan 2016 14:28:43 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad07e3d3256_481a955998817af@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad07d9cb0d0_481a955998816b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9--
+
+
+Sent mail to noreysiescalona@gmail.com (3171.8ms)
+Date: Sat, 30 Jan 2016 14:28:43 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad07e3d3256_481a955998817af@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad07d9cb0d0_481a955998816b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad07d9cb0d0_481a955998816b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad07d9cb0d0_481a955998816b9--
+
+  [1m[36mUser Load (52.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'noreysiescalona@gmail.com' LIMIT 1[0m
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (19.2ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#new_client: processed outbound mail in 613.2ms
+
+Sent mail to noreysiescalona@gmail.com (1507.2ms)
+Date: Sat, 30 Jan 2016 14:48:38 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad0c8e14296_4a3b1141990414d@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad0c8e3b4c_4a3b114199041360";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad0c8e3b4c_4a3b114199041360
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad0c8e3b4c_4a3b114199041360
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad0c8e3b4c_4a3b114199041360--
+
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (0.1ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.1ms)
+
+UserMailer#new_client: processed outbound mail in 72.7ms
+
+Sent mail to noreysiescalona@gmail.com (1434.0ms)
+Date: Sat, 30 Jan 2016 14:51:59 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad0d575c58a_4a3b114199041644@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad0d5754bf5_4a3b114199041580";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad0d5754bf5_4a3b114199041580
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad0d5754bf5_4a3b114199041580
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad0d5754bf5_4a3b114199041580--
+
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (0.1ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.0ms)
+
+UserMailer#new_client: processed outbound mail in 11.7ms
+
+Sent mail to noreysiescalona@gmail.com (4088.7ms)
+Date: Sat, 30 Jan 2016 14:53:18 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad0da68ec9d_4a3b114199041899@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad0da68dc08_4a3b114199041785";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad0da68dc08_4a3b114199041785
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad0da68dc08_4a3b114199041785
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad0da68dc08_4a3b114199041785--
+
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (0.1ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.0ms)
+
+UserMailer#new_client: processed outbound mail in 12.5ms
+
+Sent mail to noreysiescalona@gmail.com (3805.4ms)
+Date: Sat, 30 Jan 2016 14:53:48 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad0dc499280_4a3b114199042052@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad0dc498272_4a3b114199041924";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad0dc498272_4a3b114199041924
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad0dc498272_4a3b114199041924
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad0dc498272_4a3b114199041924--
+
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'noreysiescalona@gmail.com' LIMIT 1[0m
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (2.9ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#new_client: processed outbound mail in 300.8ms
+
+Sent mail to noreysiescalona@gmail.com (1212.8ms)
+Date: Sat, 30 Jan 2016 14:54:51 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad0e037ff64_4b23973998248c9@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad0e037db4b_4b239739982476d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad0e037db4b_4b239739982476d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad0e037db4b_4b239739982476d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad0e037db4b_4b239739982476d--
+
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'noreysiescalona@gmail.com' LIMIT 1[0m
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (2.0ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.4ms)
+
+UserMailer#new_client: processed outbound mail in 191.6ms
+
+Sent mail to noreysiescalona@gmail.com (6715.0ms)
+Date: Sat, 30 Jan 2016 14:56:10 -0430
+From: crumbik.support@example.com
+To: noreysiescalona@gmail.com
+Message-ID: <56ad0e52a376d_4b39d5599498073@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad0e52a17fc_4b39d5599497969";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad0e52a17fc_4b39d5599497969
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad0e52a17fc_4b39d5599497969
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad0e52a17fc_4b39d5599497969--
+
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-30 14:59:22 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PaginasController#index as HTML
+  Rendered paginas/index.html.erb within layouts/application (1120.0ms)
+  Rendered partials/_header.html.erb (9.7ms)
+  Rendered partials/_footer.html.erb (2.0ms)
+Completed 200 OK in 1667ms (Views: 1616.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/owl.theme.self-d43a451decfbae7699bde01271ce9379402425b3b7e99d53ecefbaa6e086a2e5.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/footer.self-b4868899910f3742937796b69ef0dc6304ed8986b5477651e44c551fe143df3c.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/owl.transitions.self-fff066b05183538ba375ba3d7ae9c4c36c39fdde07d62583aff0d564447b256c.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/jquery-ui/theme.self-df1da30301997b52795cb0213bccd335f2897b65f84d1d7d7c63c04f048d902f.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-23329dbe1961b938278306c019037fe36ff6ccb28193f1038e52ccbf52858163.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-bf92a2196df590f06fad4ab5bb7ed4db1874a9bef0c9af85ea0490d2108b9966.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/application.self-622ba76a83b79648ea1e290ea2423971a32b738b0101ce6309d704883954621c.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/frontend.self-cb159f54acba162ad550e790139820040302a26b44fbf16066df64d5124923c2.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/general.self-600c85b85d9de874c54e541ec37596eba8bc87c34d4aaf64dba86a47a1aaae40.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize_conf.self-2471e58471544239d3ec99a4e60fda4d2f38e8c067981530d3d9cb47854d455b.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/owl.carousel.self-8bdce040286fb9b851d53a7af378ae135e1ef93e85f6d1082630d6729cf59337.css?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/owl.carousel.min.self-ee217c0bc23f4d8dd78f1859aa30cfc915864228ad3d2077f9ad2befc8c4626e.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/users.self-c6bcd7697df21634f137527e789adb76293f1c13d34abe10ca4f002d525c14fb.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/application.self-4fea73ccac37b1856cd7b42ea4c498374bfb6d00e9f50761a76518bb3dda916b.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/logo-75217d832579eaa88aca427b304af5add12b96d3c88b3b9046de61743d18b518.png" for 127.0.0.1 at 2016-01-30 14:59:25 -0430
+
+
+Started GET "/assets/logoslogan-cb779e2da65d28f34b170d674d6d50abc6078046bd62fc8cdb077329d66a5920.png" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/crm-b4c98d7c35886ba201ab4e18ca20fb48b4f79ed6fe7e53c02d9a4099017fad41.jpg" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/email-9dff874eb167b9151209b7d2e21380f3089108f34d9b1ddab23095f195e95576.jpg" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/crmlupa-5c16cd3e562600cbb519aefbf526beff3c443e1359a0cb82fc2f54af4354a2c4.jpg" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/satisfecho-0d26194eef20a5ac6f5c24bf1dc2611acdec3735427b7486aec20166489799a2.jpg" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/crm2-25a154056568e83b07172a33e51a9c630241d2a99f9c85cad9dfc227ad698cab.jpg" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/parallax2-2fc13cae63b0a97ef2e4e7075aaf7bc90dc32d3803f6fdc7502e10531b875271.png" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/Plata-81bdf8911f6943685532f06892b1d5bc980ec6acb41fdb2e411c5cfd957b04c1.png" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/Bronce-4afe5c64b9357543101d4ac6f23cd619abdaf83087c761170abb925cd179c0c1.png" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/roboto/Roboto-Bold-8b84b2abc336ee61f48a28a697b6ace2333ea5f1868aa15d5aeb2c7beac6d716.woff2" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/Oro-43e4a2d593a39ef523672e392b2ea266bd109f4eff405c4e460886fe4f0030f5.png" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/demanda-bf15360b268d0ef0e0a8a4673e499c48ed710d5e128413ee89e94f8d853c8a9b.jpg" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/digital-cd062d2f4881bfefb858ce1234d64fa0d9f65393bbb1833f007a1834c98baee5.jpg" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/ubicacion-dee3accdb0db40df95455be8ee10359f4bad1edd06834f559501a9f3db2dd8dc.png" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/fondoazul-0e1f36300ae483f848f917892bf1077243b4065559b95f08504df2bf978c9f4a.jpg" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/configuracion-ba6b725949ff2f284362a9ec0da70babfa98e5499255b1ebe63d6c94708a8557.jpg" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/backgroundfooter-bb9231916d7d6cbaeea32bbcc04c5721fc22f05afcb4a6000d47a2d785c377ee.png" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/roboto/Roboto-Thin-fbcf22e622baa9226f9f2dcd2ce4975c9babc01a52eaf9397557a97cdebd7e40.woff2" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/assets/crumbikfoot-a8f751c5b7228e0f95586dd0fdb25ca7e8e65f2f59e522aaa9446afb607dfb7c.png" for 127.0.0.1 at 2016-01-30 14:59:26 -0430
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-01-30 14:59:35 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (73.6ms)
+  Rendered partials/_header.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 304ms (Views: 278.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-01-30 15:01:01 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (13.5ms)
+  Rendered partials/_header.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 225ms (Views: 223.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/footer.self-b4868899910f3742937796b69ef0dc6304ed8986b5477651e44c551fe143df3c.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:01 -0430
+
+
+Started GET "/assets/frontend.self-cb159f54acba162ad550e790139820040302a26b44fbf16066df64d5124923c2.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:01 -0430
+
+
+Started GET "/assets/general.self-600c85b85d9de874c54e541ec37596eba8bc87c34d4aaf64dba86a47a1aaae40.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:01 -0430
+
+
+Started GET "/assets/materialize_conf.self-2471e58471544239d3ec99a4e60fda4d2f38e8c067981530d3d9cb47854d455b.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:01 -0430
+
+
+Started GET "/assets/owl.carousel.self-8bdce040286fb9b851d53a7af378ae135e1ef93e85f6d1082630d6729cf59337.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/owl.theme.self-d43a451decfbae7699bde01271ce9379402425b3b7e99d53ecefbaa6e086a2e5.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/owl.transitions.self-fff066b05183538ba375ba3d7ae9c4c36c39fdde07d62583aff0d564447b256c.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/jquery-ui/theme.self-df1da30301997b52795cb0213bccd335f2897b65f84d1d7d7c63c04f048d902f.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-23329dbe1961b938278306c019037fe36ff6ccb28193f1038e52ccbf52858163.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-bf92a2196df590f06fad4ab5bb7ed4db1874a9bef0c9af85ea0490d2108b9966.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/initial.self-5fc251c38da473321319aa59154bbaf8d6a0e5dd635dcb3e4de6f70af7ef6f5c.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/application.self-622ba76a83b79648ea1e290ea2423971a32b738b0101ce6309d704883954621c.css?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/global.self-90649deff3358499c5859330da1363eea3e2bef75c80df5940f3894778f95027.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/collapsible.self-28e651bb34f045977f525ed2f35a22955e549b9e783851dba0b75b480c75abb2.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/dropdown.self-a1ff4400a417f25698cc5cc70e36e273953beaf52226d09b3795ce3edc473a66.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/materialbox.self-6c6b2ba48598681c90551b540338699c75cf2f9ada34cc4b22570c217b9292d8.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/tabs.self-922f8a5ef8f7381c945259a9f1dcaf6d628630cda8fcbbfe182ea653091b165c.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/tooltip.self-df3538fd067523c8b7f4d50e060340ec0b551ebaba9733e157c404df9a96a185.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/forms.self-95e85e335577e28202a4b4034a754320f866221010ed4a0be2cbf6af0dd79f1d.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/slider.self-8052f7188f9e8ab3d03b246d4942a4824edb9614d0d130051d11ba1354c9c798.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/cards.self-b1de04b6f5f525d63199f556bb55d5b8bdae7170b91bfcb503958bc8ed10945b.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/buttons.self-fc0951c300b1984a00694eabc8c451531be448d646ac073b05e4d2fbf7209302.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize-sprockets.self-4691589913babdfbd3fb736895105a8e826d4abde842e6d1e8dd2d188e255bc7.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/materialize/carousel.self-6f3b9002af3ab4d871a03a44d2e174370720ab31f19a4ee543c1904c32e2befa.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/owl.carousel.min.self-ee217c0bc23f4d8dd78f1859aa30cfc915864228ad3d2077f9ad2befc8c4626e.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/users.self-c6bcd7697df21634f137527e789adb76293f1c13d34abe10ca4f002d525c14fb.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/application.self-4fea73ccac37b1856cd7b42ea4c498374bfb6d00e9f50761a76518bb3dda916b.js?body=1" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/logo-75217d832579eaa88aca427b304af5add12b96d3c88b3b9046de61743d18b518.png" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/crumbikfoot-a8f751c5b7228e0f95586dd0fdb25ca7e8e65f2f59e522aaa9446afb607dfb7c.png" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/roboto/Roboto-Bold-8b84b2abc336ee61f48a28a697b6ace2333ea5f1868aa15d5aeb2c7beac6d716.woff2" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/backgroundfooter-bb9231916d7d6cbaeea32bbcc04c5721fc22f05afcb4a6000d47a2d785c377ee.png" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/roboto/Roboto-Thin-fbcf22e622baa9226f9f2dcd2ce4975c9babc01a52eaf9397557a97cdebd7e40.woff2" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started GET "/assets/roboto/Roboto-Medium-1cd5c4b37938d932110ec043ce1cc766d18cacf7a4e7cffa6a539855d5bdc08d.woff2" for 127.0.0.1 at 2016-01-30 15:01:02 -0430
+
+
+Started POST "/users" for 127.0.0.1 at 2016-01-30 15:01:33 -0430
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dr0fVKyMyLxzFmzn+ozItaCi2GK5ZYMjouUQCAwyHuHI6KQSUY2nCv0o5UYTGy9WMhYwTNooPs9vt5MKtg+Qxg==", "user"=>{"email"=>"rdgc91@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"", "lastname"=>"", "cellphone_number"=>"", "birthdate"=>""}, "commit"=>"Sign up"}
+Unpermitted parameters: lastname, cellphone_number, birthdate
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (30.9ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'rdgc91@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (57.4ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('rdgc91@gmail.com', '$2a$10$OA229CgHUamT7elULPvOvOVi1EB.Qx5P0ZSK29K0JqgdBlzEKLHQ.', '2016-01-30 19:31:33.369908', '2016-01-30 19:31:33.369908')
+  [1m[36m (90.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (24.3ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2016-01-30 19:31:33.521962', `current_sign_in_at` = '2016-01-30 19:31:33.521962', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2016-01-30 19:31:33.524227' WHERE `users`.`id` = 3[0m
+  [1m[35m (41.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 600ms (ActiveRecord: 245.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-30 15:01:33 -0430
+Processing by PaginasController#index as HTML
+  Rendered paginas/index.html.erb within layouts/application (16.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered partials/_header.html.erb (4.8ms)
+  Rendered partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 215ms (Views: 213.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-01-30 15:01:36 -0430
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Yqp4nIBjcD9ZtlNvDuKwNHHwaE2914r4n+9qISy/GiSk/8PafWIfideI2s7ndVfX40SAY96aNxRSvekjloKUAw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-30 15:01:36 -0430
+Processing by PaginasController#index as HTML
+  Rendered paginas/index.html.erb within layouts/application (17.5ms)
+  Rendered partials/_header.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 220ms (Views: 219.3ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (22.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'rdgc91@gmail.com' LIMIT 1[0m
+  Rendered user_mailer/new_client.html.erb within layouts/mailer (1.6ms)
+  Rendered user_mailer/new_client.text.erb within layouts/mailer (0.5ms)
+
+UserMailer#new_client: processed outbound mail in 192.3ms
+
+Sent mail to rdgc91@gmail.com (2438.4ms)
+Date: Sat, 30 Jan 2016 15:02:00 -0430
+From: crumbik.support@example.com
+To: rdgc91@gmail.com
+Message-ID: <56ad0fb05bfe_4ba712c399499985@noreysi-Lenovo-G480.mail>
+Subject: New client
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56ad0fb03c69_4ba712c3994998b4";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56ad0fb03c69_4ba712c3994998b4
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bienvenido a Crumbik Platform
+
+Probando el mailer de rails, find me in app/views/user_mailer/new_client.text.erb
+
+
+&copy; Crumbik
+----==_mimepart_56ad0fb03c69_4ba712c3994998b4
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Bienvenido a Crumbik Platform</h1>
+
+<p>
+  Probando el mailer de rails, find me in app/views/user_mailer/new_client.html.erb
+</p>
+
+
+    <p>
+    	&copy; Crumbik
+    </p>
+  </body>
+</html>
+
+----==_mimepart_56ad0fb03c69_4ba712c3994998b4--
+
